@@ -1,0 +1,29 @@
+# Nicholas Harripersad .screenrc
+
+# General options
+
+startup_message off
+multiuser on
+defscrollback     3000              # default is 100
+
+# ====================
+# hardstatus line always at the end
+#
+# explanation
+# "%{WK}%H |    : display hostname in white on gray
+# "%?%-w%?      : if there are windows to the left (%-w) display them
+# %{+b KW} %n %t: current window number and title bold, purple on white
+# %{-b BK}      : turn off bold, colors back to white on gray
+# %?%+w%?       : if there are windows to the right (%+w) display them
+# %=            : insert space to the end
+# %c %M %d, %Y  : HH:MM Month Day, Year
+
+#hardstatus alwayslastline "%{WK}%H | %?%-w%?%{+b Bw} %n %t %{-b WK}%?%+w%? %=| %c %M %d, %Y"
+
+# Default screens
+
+screen -t LOG 0  multitail -i /var/log/syslog -i /var/log/apache2/access.log
+screen -t IRC 1 irssi
+screen -t MAIL 2 
+screen -t MISC 3
+
