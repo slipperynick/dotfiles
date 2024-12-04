@@ -1,0 +1,52 @@
+PATH=/bin:/usr/bin:/usr/local/bin:/opt/local/bin/:$HOME/bin:$HOME:
+SHELL=/bin/bash
+MAILDIR=$HOME/Mail
+VERBOSE=off
+PMDIR=$HOME/.procmail
+DEFAULT=/var/mail/nick
+LOGFILE=$PMDIR/log
+
+:0
+* ^(From|CC|To).*framework@spool.metasploit.com
+metasploit/
+
+:0
+* ^(From|CC|To).*snort-users@lists.sourceforge.net
+snort-users/
+
+:0
+* ^(From|CC|To).*dataloss@datalossdb.org
+dataloss/
+
+:0
+* ^(From|CC|To).*wireshark-users@wireshark.org
+wireshark-users/
+
+:0
+* ^(From|CC|To).*oss-security@lists.openwall.com
+oss-security/
+
+:0
+* ^(From|CC|To).*nanog@nanog.org
+nanog/
+
+:0
+* ^(From|CC|To).*postfix-users@postfix.org
+postfix/
+
+:0
+* ^(From|CC|To).*arch-general-bounces@archlinux.org
+arch-general/
+
+:0
+* ^(From|CC|To).*ubuntu-users@lists.ubuntu.com
+ubuntu-users/
+
+:0
+* ^(From|CC|To|Delivered-To).*bugtraq@securityfocus.com
+bugtraq/
+
+:0
+* ^Subject.*Logwatch for pura
+logwatch/
+
