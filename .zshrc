@@ -104,3 +104,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+<<<<<<< HEAD
+=======
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/nick/.lmstudio/bin"
+# End of LM Studio CLI section
+
+>>>>>>> 7741279 (zshrc)
