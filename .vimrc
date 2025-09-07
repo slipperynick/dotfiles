@@ -6,7 +6,6 @@ syntax enable
 " Sets how many lines of history VIM has to remember
 set history=700
 
-
 "Always show current position
 set ruler
 
@@ -18,7 +17,6 @@ set cmdheight=2
 
 " Ignore case when searching
 set ignorecase
-
 
 " Highlight search results
 set hlsearch
@@ -40,7 +38,6 @@ set nobackup
 set nowb
 set noswapfile
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -61,7 +58,6 @@ set tw=79
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
-
 
 """"""""""""""""""""""""""""""
 " => Status line
