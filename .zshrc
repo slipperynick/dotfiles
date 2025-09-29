@@ -11,7 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 #ZSH_THEME="duellj"
 #ZSH_THEME="apple"
 #ZSH_THEME="jonathan"
-ZSH_THEME="gnzh"
+ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -109,3 +109,4 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="$PATH:/Users/nick/.lmstudio/bin"
 # End of LM Studio CLI section
 
+eval "$(starship init zsh)"
