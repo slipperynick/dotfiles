@@ -1,0 +1,67 @@
+add_newline = true
+
+format = """
+╭─$username@$hostname $directory$git_branch$git_status$kubernetes$terraform$python
+╰─$character """
+
+# Username
+[username]
+style_user = "green"
+show_always = true
+format = "[$user]($style)"
+
+# Hostname
+[hostname]
+ssh_only = false
+style = "green"
+format = "[$hostname]($style)"
+
+# Directory
+[directory]
+style = "blue"
+truncation_length = 3
+truncate_to_repo = false
+format = "[$path]($style) "
+
+# Git branch
+[git_branch]
+symbol = "🌱 "
+style = "cyan"
+format = "[$symbol$branch]($style) "
+
+# Git status
+[git_status]
+style = "red"
+format = "[$all_status$ahead_behind]($style) "
+conflicted = "="
+stashed    = "$"
+modified   = "!"
+staged     = "+"
+untracked  = "?"
+renamed    = "»"
+deleted    = "✘"
+ahead      = "⇡${count}"
+behind     = "⇣${count}"
+
+# Kubernetes
+[kubernetes]
+symbol = "☸️ "
+style = "yellow"
+format = "[$symbol$context]($style) "
+
+# Terraform
+[terraform]
+symbol = "💠 "
+style = "magenta"
+format = "[$symbol$workspace]($style) "
+
+# Python
+[python]
+symbol = "🐍 "
+style = "red"
+format = "[$symbol$version]($style) "
+
+# Prompt character (arrow)
+[character]
+success_symbol = "[➤](bold green)"
+error_symbol   = "[➤](bold red)"
