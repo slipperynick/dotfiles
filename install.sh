@@ -6,6 +6,6 @@
 
 echo 'Copying all dot files to your home directory... '
 
-cp -iv .[a-zA-Z0-9]* ~/
+cp -riv .[a-zA-Z0-9]* ~/
 
 echo 'Done.'
