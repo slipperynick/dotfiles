@@ -22,7 +22,7 @@ defscrollback     3000              # default is 100
 
 # Default screens
 
-screen -t LOG 0  multitail -i /var/log/syslog -i /var/log/apache2/access.log
+screen -t LOG 0 multitail -i /var/log/syslog -i /var/log/apache2/access.log
 screen -t IRC 1 irssi
 screen -t MAIL 2 
 screen -t MISC 3

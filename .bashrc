@@ -118,9 +118,11 @@ alias cpuinfo='lscpu|less'
 alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log'
 
 alias n='sudo netstat -tulpn|less'
-alias m='mutt'
+alias m='mutt' # old skool :D
 
 
 
 export HISTSIZE=-1
 export HISTFILESIZE=-1
+
+eval "$(starship init bash)"
