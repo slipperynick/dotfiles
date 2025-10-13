@@ -6,6 +6,7 @@
 
 echo 'Copying all dot files to your home directory... '
 
-cp -riv .[a-zA-Z0-9]* ~/
+#cp -riv .[a-zA-Z0-9]* ~/
 
+rsync -av --progress --exclude='.git' --exclude='.config' .[a-zA-Z0-9]* ~/ --backup --suffix=.backup
 echo 'Done.'

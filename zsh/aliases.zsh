@@ -1,5 +1,7 @@
 # Aliases for zsh and macOS
 
+#alias k="kubectl"
+alias t="talosctl"
 alias mp="multipass"
 alias k="kubecolor"
 alias ls="eza"
